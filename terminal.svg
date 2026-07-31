@@ -82,7 +82,7 @@
           <div class="dots">
             <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
           </div>
-          <div class="title">developer.js</div>
+          <div class="title">analyst.py</div>
           <div class="status"><div class="status-dot"></div>status</div>
         </div>
 
@@ -92,14 +92,14 @@
           </div>
           
           <div class="code">
-            <div class="line l1" style="color: #e2e8f0;">const developer = {</div>
-            <div class="line l2" style="color: #a3e6d3;">  name: "Eki Zulfar Rachman",</div>
-            <div class="line l3" style="color: #a3e6d3;">  role: "Frontend Developer",</div>
-            <div class="line l4" style="color: #a3e6d3;">  stack: ["React", "Node.js", "JavaScript"],</div>
-            <div class="line l5" style="color: #93c5fd;">  principle: "Leveraging AI as a professional tool, not a replacement.",</div>
-            <div class="line l6" style="color: #f59e0b;">  focus: "building engaging websites",</div>
+            <div class="line l1" style="color: #e2e8f0;">const analyst = {</div>
+            <div class="line l2" style="color: #a3e6d3;">  name: "Wisnu Darmawan",</div>
+            <div class="line l3" style="color: #a3e6d3;">  role: ["Data Analyst", "Data Scientist", "Data Engineer"],</div>
+            <div class="line l4" style="color: #a3e6d3;">  stack: ["Python", "SQL", "Excel", "Power BI"],</div>
+            <div class="line l5" style="color: #93c5fd;">  principle: "Turning data into meaningful decisions.",</div>
+            <div class="line l6" style="color: #f59e0b;">  focus: "analytics &amp; actionable insights",</div>
             <div class="line l7" style="color: #e2e8f0;">  build: () =&gt; {</div>
-            <div class="line l8" style="color: #c084fc;">    return "interactive digital experiences";</div>
+            <div class="line l8" style="color: #c084fc;">    return "data → insight → impact";</div>
             <div class="line l9" style="color: #e2e8f0;">  }</div>
             <div class="line l10" style="color: #e2e8f0;">}<span class="cursor"></span></div>
           </div>
@@ -107,7 +107,7 @@
 
         <div class="footer">
           <div style="display: flex; gap: 12px;"><span style="color: #10b981;">⎇ main</span><span>Ln 10, Col 2</span></div>
-          <div style="display: flex; gap: 12px;"><span style="color: #10b981;">● Live</span><span>JavaScript</span></div>
+          <div style="display: flex; gap: 12px;"><span style="color: #10b981;">● Live</span><span>Python</span></div>
         </div>
       </div>
 
