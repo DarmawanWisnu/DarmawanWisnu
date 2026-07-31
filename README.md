@@ -1,16 +1,99 @@
-## Hi there 👋
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
 
-<!--
-**DarmawanWisnu/DarmawanWisnu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    .header-container {
+      position: relative;
+      z-index: 2;
+    }
 
-Here are some ideas to get you started:
+    .name {
+      font-family: 'Syne', sans-serif;
+      font-size: 48px;
+      font-weight: 800;
+      margin: 0;
+      background: linear-gradient(135deg, #10b981 0%, #06d6a0 40%, #06b6d4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 12px rgba(6,182,212,0.3));
+      animation: titleGlow 4s ease-in-out infinite;
+    }
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    @keyframes titleGlow {
+      0%, 100% { filter: drop-shadow(0 0 12px rgba(6,182,212,0.3)); }
+      50% { filter: drop-shadow(0 0 24px rgba(16,185,129,0.5)); }
+    }
+
+    .subtitle {
+      font-family: 'Syne', sans-serif;
+      color: #a3aeb8;
+      font-size: 16px;
+      margin-top: 8px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .rocket {
+      display: inline-block;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+
+    .badges-wrapper {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 25px; /* Margin atas untuk lencana */
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .cyber-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 500;
+      background: rgba(16,185,129,0.05);
+      border: 1px solid rgba(16,185,129,0.3);
+      color: #a3e6d3;
+    }
+
+    .cyber-badge.cyan {
+      background: rgba(6,182,212,0.05);
+      border-color: rgba(6,182,212,0.3);
+      color: #93c5fd;
+    }
+
+    .icon-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      font-size: 14px;
+    }
+  </style>
+
+  <div class="header-container">
+    <h1 class="name">Wisnu Darmawan</h1>
+    <div class="subtitle">
+      <span class="rocket">🚀</span> Building Data-Driven Solutions & Intelligent Systems <span class="rocket">🚀</span>
+    </div>
+
+    <div class="badges-wrapper">
+      <div class="cyber-badge">
+        <div class="icon-box">{}</div>
+        Data Analyst
+      </div>
+      <div class="cyber-badge cyan">
+        <div class="icon-box">📍</div>
+        Banten, Indonesia
+      </div>
+    </div>
+  </div>
+</div>
