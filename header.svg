@@ -1,0 +1,257 @@
+<svg fill="none" viewBox="0 0 1000 300" width="100%" height="300" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap');
+
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+          margin: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        .canvas {
+          width: 100%;
+          height: 100%;
+          padding: 34px 42px;
+          position: relative;
+          overflow: hidden;
+          border-radius: 24px;
+          background:
+            radial-gradient(circle at 10% 0%, rgba(16,185,129,.16), transparent 32%),
+            radial-gradient(circle at 90% 10%, rgba(6,182,212,.14), transparent 30%),
+            radial-gradient(circle at 75% 100%, rgba(139,92,246,.12), transparent 30%),
+            #080d12;
+          border: 1px solid rgba(255,255,255,.09);
+          font-family: 'JetBrains Mono', monospace;
+          color: #ffffff;
+        }
+
+        .grid {
+          position: absolute;
+          inset: 0;
+          opacity: .18;
+          background-image:
+            linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+          background-size: 32px 32px;
+        }
+
+        .glow {
+          position: absolute;
+          width: 260px;
+          height: 260px;
+          right: -80px;
+          top: -100px;
+          border-radius: 50%;
+          background: #06b6d4;
+          filter: blur(100px);
+          opacity: .12;
+        }
+
+        .content {
+          position: relative;
+          z-index: 2;
+        }
+
+        .eyebrow {
+          font-size: 11px;
+          letter-spacing: 3px;
+          color: #64748b;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+        }
+
+        .name {
+          margin: 0;
+          font-family: 'Syne', sans-serif;
+          font-size: 48px;
+          line-height: 1;
+          font-weight: 800;
+          letter-spacing: -1.5px;
+          background: linear-gradient(
+            100deg,
+            #ffffff 0%,
+            #d1fae5 35%,
+            #67e8f9 75%,
+            #a78bfa 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          filter: drop-shadow(0 0 18px rgba(6,182,212,.18));
+        }
+
+        .subtitle {
+          margin-top: 12px;
+          color: #94a3b8;
+          font-size: 13px;
+          letter-spacing: .7px;
+        }
+
+        .subtitle span {
+          color: #06d6a0;
+        }
+
+        .roles {
+          display: flex;
+          gap: 9px;
+          margin-top: 24px;
+        }
+
+        .role {
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          padding: 8px 12px;
+          border-radius: 7px;
+          background: rgba(255,255,255,.035);
+          border: 1px solid rgba(255,255,255,.09);
+          font-size: 10px;
+          letter-spacing: .5px;
+          color: #cbd5e1;
+        }
+
+        .dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #10b981;
+          box-shadow: 0 0 10px #10b981;
+        }
+
+        .role:nth-child(2) .dot {
+          background: #8b5cf6;
+          box-shadow: 0 0 10px #8b5cf6;
+        }
+
+        .role:nth-child(3) .dot {
+          background: #06b6d4;
+          box-shadow: 0 0 10px #06b6d4;
+        }
+
+        .bottom {
+          position: absolute;
+          left: 42px;
+          right: 42px;
+          bottom: 27px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 2;
+        }
+
+        .location {
+          color: #64748b;
+          font-size: 10px;
+          letter-spacing: .7px;
+        }
+
+        .location strong {
+          color: #94a3b8;
+          font-weight: 500;
+        }
+
+        .signal {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          color: #64748b;
+          font-size: 9px;
+          letter-spacing: 1.5px;
+        }
+
+        .signal-dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #10b981;
+          box-shadow: 0 0 12px #10b981;
+        }
+
+        .accent {
+          position: absolute;
+          right: 42px;
+          top: 40px;
+          width: 70px;
+          height: 1px;
+          background: linear-gradient(90deg, transparent, #06b6d4);
+          box-shadow: 0 0 12px rgba(6,182,212,.7);
+        }
+
+        .accent2 {
+          position: absolute;
+          right: 42px;
+          top: 47px;
+          width: 35px;
+          height: 1px;
+          background: #8b5cf6;
+          box-shadow: 0 0 10px rgba(139,92,246,.7);
+        }
+      </style>
+
+      <div class="canvas">
+
+        <div class="grid"></div>
+        <div class="glow"></div>
+
+        <div class="accent"></div>
+        <div class="accent2"></div>
+
+        <div class="content">
+
+          <div class="eyebrow">
+            DATA / ANALYTICS / ENGINEERING
+          </div>
+
+          <h1 class="name">
+            Wisnu Darmawan
+          </h1>
+
+          <div class="subtitle">
+            Turning <span>data</span> into actionable insights &amp; better decisions.
+          </div>
+
+          <div class="roles">
+
+            <div class="role">
+              <div class="dot"></div>
+              DATA ANALYST
+            </div>
+
+            <div class="role">
+              <div class="dot"></div>
+              DATA SCIENTIST
+            </div>
+
+            <div class="role">
+              <div class="dot"></div>
+              DATA ENGINEER
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="bottom">
+
+          <div class="location">
+            📍 <strong>Banten, Indonesia</strong>
+          </div>
+
+          <div class="signal">
+            <div class="signal-dot"></div>
+            SYSTEM ONLINE
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>
