@@ -3,7 +3,7 @@
 <img src="./header.svg" width="850"/>
 
 </div>
-  <!-- METRIK PAMERAN: Margin-top ditambah 10px untuk turun sedikit -->
+
  <div align="center">
 
   <div>
